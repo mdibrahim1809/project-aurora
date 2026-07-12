@@ -1,0 +1,6 @@
+{
+  "name": "Project Aurora",
+  "short_name": "Aurora",
+  "start_url": "/",
+  "display": "standalone"
+}

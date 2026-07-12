@@ -1,0 +1,49 @@
+/*=========================================
+    STARS
+=========================================*/
+
+.stars{
+
+    position:absolute;
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:0;
+
+}
+
+.star{
+
+    position:absolute;
+
+    width:2px;
+    height:2px;
+
+    background:white;
+
+    border-radius:50%;
+
+    opacity:.8;
+
+    animation:twinkle linear infinite;
+
+}
+
+@keyframes twinkle{
+
+    0%,100%{
+
+        opacity:.15;
+        transform:scale(.8);
+
+    }
+
+    50%{
+
+        opacity:1;
+        transform:scale(1.8);
+
+    }
+
+}

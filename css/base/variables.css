@@ -1,0 +1,107 @@
+/*=========================================
+    PROJECT AURORA
+    DESIGN TOKENS
+=========================================*/
+
+:root{
+
+/*==============================
+COLORS
+==============================*/
+
+--color-bg:#07090D;
+--color-surface:#101521;
+--color-card:#171D2C;
+--color-card-hover:#1D2638;
+
+--color-text:#F5F5F7;
+--color-text-soft:#B8BDC7;
+--color-text-muted:#7A8191;
+
+--color-accent:#D9A16C;
+--color-accent-blue:#78A6FF;
+--color-accent-purple:#9A8CFF;
+
+--color-success:#79D98A;
+--color-warning:#FFC857;
+
+
+/*==============================
+TYPOGRAPHY
+==============================*/
+
+--font-heading:"Cormorant Garamond",serif;
+--font-body:"Inter",sans-serif;
+--font-letter:"Caveat",cursive;
+
+
+/*==============================
+FONT SIZE
+==============================*/
+
+--fs-xs:.75rem;
+--fs-sm:.875rem;
+--fs-base:1rem;
+--fs-lg:1.125rem;
+--fs-xl:1.5rem;
+--fs-2xl:2rem;
+--fs-3xl:2.8rem;
+--fs-4xl:4rem;
+
+
+/*==============================
+SPACING
+==============================*/
+
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-7:32px;
+--space-8:40px;
+--space-9:48px;
+--space-10:64px;
+--space-11:80px;
+--space-12:96px;
+
+
+/*==============================
+RADIUS
+==============================*/
+
+--radius-sm:10px;
+--radius-md:16px;
+--radius-lg:24px;
+--radius-xl:32px;
+--radius-round:999px;
+
+
+/*==============================
+SHADOWS
+==============================*/
+
+--shadow-sm:0 4px 12px rgba(0,0,0,.25);
+--shadow-md:0 10px 30px rgba(0,0,0,.35);
+--shadow-lg:0 20px 60px rgba(0,0,0,.45);
+
+
+/*==============================
+TRANSITIONS
+==============================*/
+
+--transition-fast:.25s ease;
+--transition-normal:.45s ease;
+--transition-slow:.8s ease;
+
+
+/*==============================
+LAYOUT
+==============================*/
+
+--container:1200px;
+--mobile:360px;
+--navbar-height:72px;
+
+}

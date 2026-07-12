@@ -1,0 +1,25 @@
+body{
+
+    min-height:100vh;
+
+}
+
+#app{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+}
+
+.container{
+
+    width:min(92%,1200px);
+
+    margin-inline:auto;
+
+}

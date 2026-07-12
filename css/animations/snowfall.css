@@ -1,0 +1,32 @@
+.snow{
+
+    position:absolute;
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:white;
+
+    opacity:.7;
+
+    animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-10vh);
+
+    }
+
+    to{
+
+        transform:translateY(110vh);
+
+    }
+
+}
