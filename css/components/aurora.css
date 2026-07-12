@@ -56,32 +56,32 @@
 
 @keyframes auroraLeft{
 
-    from{
-
-        transform:translate(0,0);
-
+    0%{
+        transform:translate(-60px,-30px) scale(1);
     }
 
-    to{
+    50%{
+        transform:translate(40px,20px) scale(1.15);
+    }
 
-        transform:translate(120px,80px);
-
+    100%{
+        transform:translate(80px,70px) scale(1);
     }
 
 }
 
 @keyframes auroraRight{
 
-    from{
-
-        transform:translate(0,0);
-
+    0%{
+        transform:translate(50px,50px) scale(1);
     }
 
-    to{
+    50%{
+        transform:translate(-40px,-40px) scale(1.2);
+    }
 
-        transform:translate(-100px,-120px);
-
+    100%{
+        transform:translate(-80px,-90px) scale(1);
     }
 
 }

@@ -130,6 +130,7 @@
 
     box-shadow:
         0 12px 30px rgba(217,161,108,.25);
+    animation:breathe 4s ease-in-out infinite;
 
 }
 
@@ -192,6 +193,21 @@
         opacity:1;
 
         transform:translateY(0);
+
+    }
+
+}
+@keyframes breathe{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
 
     }
 

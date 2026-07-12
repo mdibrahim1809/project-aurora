@@ -1,0 +1,23 @@
+/*=========================================
+    TIMELINE
+=========================================*/
+
+.timeline-page{
+
+    min-height:100dvh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.timeline-container{
+
+    width:min(90%,900px);
+
+    text-align:center;
+
+}
