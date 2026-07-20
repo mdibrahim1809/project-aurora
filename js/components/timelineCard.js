@@ -70,11 +70,27 @@ function CardContent(memory){
 
             </small>
 
-            <p>
+            <div class="timeline-image">
 
-                ${memory.quote}
+                <img
+                    src="${memory.image}"
+                    alt="${memory.title}"
+                    loading="lazy"
+                >
 
-            </p>
+            </div>
+
+            <blockquote class="timeline-quote">
+
+                "${memory.quote}"
+
+            </blockquote>
+
+            <div class="timeline-story">
+
+                ${memory.story}
+
+            </div>
 
         </div>
 

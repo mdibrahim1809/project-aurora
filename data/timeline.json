@@ -14,7 +14,8 @@
     "music": "chapter1.mp3",
     "weather": "night",
     "story": "You posted a story. I thought it was a cute cat. Then I realized the cute one wasn't the cat... it was you.",
-    "quote": "Everything started with one message."
+    "quote": "Everything started with one message.",
+    "image": "assets/images/timeline/image.jpg"
   },
   {
     "id": 2,
@@ -30,6 +31,7 @@
     "gallery": [],
     "music": "chapter1.mp3",
     "weather": "night",
+    "image": "assets/images/timeline/image.jpg",
     "story": "From 9 PM until 7 AM, we talked without realizing how quickly time disappeared.",
     "quote": "Time disappears with the right person."
   },
@@ -47,6 +49,7 @@
     "gallery": [],
     "music": "chapter1.mp3",
     "weather": "day",
+    "image": "assets/images/timeline/image.jpg",
     "story": "Three days after our first message, we finally met in person.",
     "quote": "Reality became better than imagination."
   },
@@ -64,6 +67,7 @@
     "gallery": [],
     "music": "chapter1.mp3",
     "weather": "day",
+    "image": "assets/images/timeline/image.jpg",
     "story": "I met your parents as a friend, and we took our first selfie together.",
     "quote": "Some photos become forever."
   },
@@ -81,6 +85,7 @@
     "gallery": [],
     "music": "chapter1.mp3",
     "weather": "evening",
+    "image": "assets/images/timeline/image.jpg",
     "story": "Our first real date together.",
     "quote": "The first page of us."
   },
@@ -98,6 +103,7 @@
     "gallery": [],
     "music": "chapter1.mp3",
     "weather": "night",
+    "image": "assets/images/timeline/image.jpg",
     "story": "The day our relationship officially began.",
     "quote": "Two stories became one."
   },
@@ -115,6 +121,7 @@
     "gallery": [],
     "music": "chapter2.mp3",
     "weather": "evening",
+    "image": "assets/images/timeline/image.jpg",
     "story": "The first time I held you close.",
     "quote": "Some hugs become home."
   },
@@ -132,6 +139,7 @@
     "gallery": [],
     "music": "chapter2.mp3",
     "weather": "evening",
+    "image": "assets/images/timeline/image.jpg",
     "story": "We spent Saptami and Navami together.",
     "quote": "Festivals become brighter with the right person."
   },
@@ -149,6 +157,7 @@
     "gallery": [],
     "music": "chapter2.mp3",
     "weather": "day",
+    "image": "assets/images/timeline/image.jpg",
     "story": "A private memory that means a lot to both of us.",
     "quote": "Some promises don't need words."
   },
@@ -166,6 +175,7 @@
     "gallery": [],
     "music": "chapter3.mp3",
     "weather": "winter",
+    "image": "assets/images/timeline/image.jpg",
     "story": "Temple, fair, matching bracelets, and one unforgettable winter evening.",
     "quote": "Winter became warm."
   },
@@ -183,6 +193,7 @@
     "gallery": [],
     "music": "chapter3.mp3",
     "weather": "night",
+    "image": "assets/images/timeline/image.jpg",
     "story": "Seven hours passed like minutes.",
     "quote": "The conversation never felt long."
   },
@@ -200,6 +211,7 @@
     "gallery": [],
     "music": "storm.mp3",
     "weather": "rain",
+    "image": "assets/images/timeline/image.jpg",
     "story": "The day everything stopped, and the day I truly started changing.",
     "quote": "Sometimes losing someone teaches you how to love them better."
   },
@@ -217,6 +229,7 @@
     "gallery": [],
     "music": "hope.mp3",
     "weather": "rain",
+    "image": "assets/images/timeline/image.jpg",
     "story": "A handwritten apology, food, a Diet Coke, and genuine effort.",
     "quote": "Love is shown through actions."
   },
@@ -234,6 +247,7 @@
     "gallery": [],
     "music": "ending.mp3",
     "weather": "sunset",
+    "image": "assets/images/timeline/image.jpg",
     "story": "The day I give you this journey and ask if we can write the next chapter together.",
     "quote": "The best chapters haven't been written yet."
   }
