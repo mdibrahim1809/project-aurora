@@ -3,6 +3,7 @@
     BUTTON EVENTS
 =========================================*/
 
+import { initScrollAnimations } from "../animations/scroll.js";
 import { loadStory } from "../core/storyLoader.js";
 import { IntroScene } from "../scenes/intro.js";
 import { ChapterOne } from "../scenes/chapter1.js";
@@ -166,7 +167,15 @@ async function openstory() {
         console.log("Rendering story...");
 
         app.innerHTML = await TimelineScene();
+
         document.body.style.opacity = "1";
+
+        // Wait until the new DOM is painted
+        requestAnimationFrame(() => {
+
+            initScrollAnimations();
+
+        });
 
     },700);
 

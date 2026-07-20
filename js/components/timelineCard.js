@@ -8,7 +8,7 @@ export function TimelineCard(memory, index) {
 
     return `
 
-    <article class="timeline-item ${side} ${memory.status || ""}">
+    <article class="timeline-item reveal ${side} ${memory.status || ""}">
 
         <div class="timeline-left">
 

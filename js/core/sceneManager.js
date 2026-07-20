@@ -2,6 +2,8 @@
     SCENE MANAGER
 =========================================*/
 
+import { initScrollAnimations } from "../animations/scroll.js";
+
 export default class SceneManager {
 
     constructor(root){
@@ -15,6 +17,9 @@ export default class SceneManager {
         const html = await scene();
 
         this.root.innerHTML = html;
+
+        // Initialize scroll-based animations
+        initScrollAnimations();
 
     }
 

@@ -3,7 +3,7 @@
  import { WelcomeScene } from "../scenes/welcome.js";
  import { initButtons } from "../components/buttonEvents.js";
  import { createSnow } from "../animations/snow.js";
-
+ import { initScrollAnimations } from "../animations/scroll.js";
  /*=========================================
         CREATE STARS
     =========================================*/
@@ -77,24 +77,11 @@ async function init() {
 
         const app = document.getElementById("app");
 
-        if (!app) {
-            console.error("Aurora: #app container not found.");
-            return;
-        }
-
-        console.log("Aurora: Creating SceneManager...");
         const manager = new SceneManager(app);
 
-        console.log("Aurora: Rendering Welcome Scene...");
         await manager.render(WelcomeScene);
-
-        console.log("Aurora: Creating stars...");
         createStars();
-
-        console.log("Aurora: Creating snow...");
         createSnow();
-
-        console.log("Aurora: Initializing buttons...");
         initButtons();
 
         console.log("Aurora: Ready ✅");

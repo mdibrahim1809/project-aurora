@@ -75,13 +75,35 @@
 
     top:0;
 
-    bottom:0;
+    bottom:-180px;
 
     width:2px;
 
-    opacity:.45;
-    
     transform:translateX(-50%);
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/*=========================================
+    PROGRESS LINE
+=========================================*/
+
+.timeline-progress{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:0;
 
     border-radius:999px;
 
@@ -89,13 +111,21 @@
 
         to bottom,
 
-        rgba(215,163,108,.10),
+        #d7a36c,
 
-        rgba(215,163,108,.90),
+        #ffd89c,
 
-        rgba(215,163,108,.10)
+        #d7a36c
 
     );
+
+    box-shadow:
+
+        0 0 15px rgba(215,163,108,.45),
+
+        0 0 35px rgba(215,163,108,.25);
+
+    transition:height .1s linear;
 
 }
 
@@ -176,6 +206,74 @@
     box-shadow:0 0 25px rgba(215,163,108,.45);
 
     z-index:2;
+
+}
+
+/*==================================================
+    TIMELINE ENDING
+==================================================*/
+
+.timeline-ending{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:140px;
+
+    margin-bottom:120px;
+
+    color:#d7a36c;
+
+}
+
+.timeline-ending-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#d7a36c;
+
+    box-shadow:
+
+        0 0 12px rgba(215,163,108,.6);
+
+}
+
+.timeline-ending-date{
+
+    color:rgba(255,255,255,.75);
+
+    letter-spacing:1px;
+
+    font-size:.95rem;
+
+}
+
+.timeline-ending-arrow{
+
+    font-size:1.3rem;
+
+    color:rgba(215,163,108,.7);
+
+}
+
+.timeline-ending-infinity{
+
+    font-size:2.6rem;
+
+    color:#d7a36c;
+
+    text-shadow:
+
+        0 0 18px rgba(215,163,108,.45);
 
 }
 
