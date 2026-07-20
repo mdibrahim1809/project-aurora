@@ -10,9 +10,11 @@ export default class SceneManager {
 
     }
 
-    render(scene){
+    async render(scene){
 
-        this.root.innerHTML = scene();
+        const html = await scene();
+
+        this.root.innerHTML = html;
 
     }
 

@@ -1,33 +1,20 @@
-import { CONFIG } from "./config.js";
-import SceneManager from "./sceneManager.js";
+ import { CONFIG } from "./config.js";
+ import SceneManager from "./sceneManager.js";
+ import { WelcomeScene } from "../scenes/welcome.js";
+ import { initButtons } from "../components/buttonEvents.js";
+ import { createSnow } from "../animations/snow.js";
 
-import { WelcomeScene } from "../scenes/welcome.js";
-import { initButtons } from "../components/buttonEvents.js";
-import { createSnow } from "../animations/snow.js";
-
-const app = document.getElementById("app");
-
-const manager = new SceneManager(app);
-
-manager.render(WelcomeScene);
-
-// Create effects
-createStars();
-createSnow();
-
-// Button events
-initButtons();
-
-/*=========================================
-    CREATE STARS
-=========================================*/
-
-function createStars() {
+ /*=========================================
+        CREATE STARS
+    =========================================*/
+ function createStars() {
 
     const container = document.querySelector(".stars");
 
     if (!container) return;
 
+    container.innerHTML = "";
+    
     for (let i = 0; i < CONFIG.animation.stars; i++) {
 
         const star = document.createElement("span");
@@ -52,6 +39,72 @@ function createStars() {
 
         container.appendChild(star);
 
+      }
+
+}
+// async function init() {
+
+//     try {
+
+//         const app = document.getElementById("app");
+
+//         if (!app) {
+//             console.error("Aurora: #app container not found.");
+//             return;
+//         }
+
+//         const manager = new SceneManager(app);
+
+//         manager.render(WelcomeScene);
+
+//         createStars();
+//         createSnow();
+
+//         initButtons();
+
+//     } catch (error) {
+
+//         console.error("Aurora failed to initialize.", error);
+
+//     }
+
+// }
+async function init() {
+
+    try {
+
+        console.log("Aurora: Starting...");
+
+        const app = document.getElementById("app");
+
+        if (!app) {
+            console.error("Aurora: #app container not found.");
+            return;
+        }
+
+        console.log("Aurora: Creating SceneManager...");
+        const manager = new SceneManager(app);
+
+        console.log("Aurora: Rendering Welcome Scene...");
+        await manager.render(WelcomeScene);
+
+        console.log("Aurora: Creating stars...");
+        createStars();
+
+        console.log("Aurora: Creating snow...");
+        createSnow();
+
+        console.log("Aurora: Initializing buttons...");
+        initButtons();
+
+        console.log("Aurora: Ready ✅");
+
+    } catch (error) {
+
+        console.error("Aurora failed to initialize.", error);
+
     }
 
 }
+
+document.addEventListener("DOMContentLoaded", init);

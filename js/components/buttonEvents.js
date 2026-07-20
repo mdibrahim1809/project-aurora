@@ -6,18 +6,45 @@
 import { loadStory } from "../core/storyLoader.js";
 import { IntroScene } from "../scenes/intro.js";
 import { ChapterOne } from "../scenes/chapter1.js";
-import { typeWriter } from "../utils/typewriter.js";
 import { TimelineScene } from "../scenes/timeline.js";
+import { typeWriter } from "../utils/typewriter.js";
 
+/*=========================================
+    INIT BUTTONS
+=========================================*/
 
+// export function initButtons() {
 
+//     const beginBtn = document.getElementById("beginBtn");
+
+//     if (!beginBtn) return;
+
+//     beginBtn.addEventListener("click", startJourney);
+
+// }
 export function initButtons() {
+
+    console.log("initButtons() called");
 
     const beginBtn = document.getElementById("beginBtn");
 
-    if (!beginBtn) return;
+    console.log("Button:", beginBtn);
 
-    beginBtn.addEventListener("click", startJourney);
+    if (!beginBtn) {
+
+        console.error("beginBtn NOT FOUND");
+
+        return;
+
+    }
+
+    beginBtn.addEventListener("click", () => {
+
+        console.log("BUTTON CLICKED");
+
+        startJourney();
+
+    });
 
 }
 
@@ -51,7 +78,9 @@ function startJourney() {
 async function initIntro() {
 
     const story = await loadStory();
+
     const text = document.getElementById("typewriter");
+
     const continueBtn = document.getElementById("continueBtn");
 
     typeWriter(
@@ -104,21 +133,41 @@ function initChapterOne() {
 
     const nextBtn = document.getElementById("chapterNext");
 
+    console.log("Next Button:", nextBtn);
+
     if (!nextBtn) return;
 
     nextBtn.addEventListener("click", () => {
 
-        const app = document.getElementById("app");
+        console.log("Continue button clicked");
 
-        document.body.style.opacity="0";
+        openstory();
 
-        setTimeout(()=>{
-
-            app.innerHTML=TimelineScene();
-
-            document.body.style.opacity="1";
-
-        },700);
     });
+
+}
+
+/*=========================================
+    OPEN story
+=========================================*/
+
+async function openstory() {
+
+    // 👇 ADD THIS
+    console.log("Open story clicked");
+
+    const app = document.getElementById("app");
+
+    document.body.style.opacity = "0";
+
+    setTimeout(async () => {
+
+        // 👇 ADD THIS
+        console.log("Rendering story...");
+
+        app.innerHTML = await TimelineScene();
+        document.body.style.opacity = "1";
+
+    },700);
 
 }

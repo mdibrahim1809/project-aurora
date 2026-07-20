@@ -1,0 +1,143 @@
+/*==================================================
+    PROJECT AURORA
+    TIMELINE COMPONENT V2
+==================================================*/
+
+/*=========================================
+    ITEM
+=========================================*/
+
+.timeline-item{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:1fr 80px 1fr;
+
+    align-items:center;
+
+    margin-bottom:90px;
+
+}
+
+/*=========================================
+    LEFT
+=========================================*/
+
+.timeline-left{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    padding-right:45px;
+
+}
+
+/*=========================================
+    RIGHT
+=========================================*/
+
+.timeline-right{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    padding-left:45px;
+
+}
+
+/*=========================================
+    CENTER
+=========================================*/
+
+.timeline-center{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*=========================================
+    CONNECTOR
+=========================================*/
+
+.timeline-item.left
+.timeline-center::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-45px;
+
+    width:45px;
+
+    height:2px;
+
+    background:rgba(215,163,108,.28);
+
+}
+
+.timeline-item.right
+.timeline-center::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:-45px;
+
+    width:45px;
+
+    height:2px;
+
+    background:rgba(215,163,108,.28);
+
+}
+
+/*=========================================
+    DOT
+=========================================*/
+
+.timeline-dot{
+
+    position:relative;
+
+    z-index:5;
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(215,163,108,.22),
+        rgba(215,163,108,.08)
+    );
+
+    border:1px solid rgba(215,163,108,.35);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 0 18px rgba(215,163,108,.18);
+
+}
