@@ -3,6 +3,7 @@
 =========================================*/
 
 import { initScrollAnimations } from "../animations/scroll.js";
+import { initTimelineFocus } from "../components/timelineFocus.js";
 
 export default class SceneManager {
 
@@ -20,6 +21,7 @@ export default class SceneManager {
 
         // Initialize scroll-based animations
         initScrollAnimations();
+        initTimelineFocus();
 
     }
 

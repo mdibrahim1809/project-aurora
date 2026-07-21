@@ -8,7 +8,8 @@ export function TimelineCard(memory, index) {
 
     return `
 
-    <article class="timeline-item reveal ${side} ${memory.status || ""}">
+    <article class="timeline-item reveal ${side} ${memory.status || "" } "data-memory="${memory.id}"
+>
 
         <div class="timeline-left">
 
@@ -52,24 +53,6 @@ function CardContent(memory){
 
         <div class="timeline-content">
 
-            <span class="timeline-date">
-
-                ${memory.date}
-
-            </span>
-
-            <h2>
-
-                ${memory.title}
-
-            </h2>
-
-            <small>
-
-                ${memory.place}
-
-            </small>
-
             <div class="timeline-image">
 
                 <img
@@ -80,15 +63,47 @@ function CardContent(memory){
 
             </div>
 
-            <blockquote class="timeline-quote">
+            <div class="memory-overlay">
 
-                "${memory.quote}"
+                <div class="memory-overlay-content">
 
-            </blockquote>
+                    <span class="timeline-date">
 
-            <div class="timeline-story">
+                        ${memory.date}
 
-                ${memory.story}
+                    </span>
+
+                    <h2>
+
+                        ${memory.title}
+
+                    </h2>
+
+                    <small>
+
+                        ${memory.place}
+
+                    </small>
+
+                    <blockquote class="timeline-quote">
+
+                        "${memory.quote}"
+
+                    </blockquote>
+
+                    <div class="timeline-story">
+
+                        ${memory.story}
+
+                    </div>
+
+                    <span class="memory-emotion">
+
+                        ${memory.emotion.toUpperCase()}
+
+                    </span>
+
+                </div>
 
             </div>
 
